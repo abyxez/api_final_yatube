@@ -1,3 +1,57 @@
-# api_final
-api final
-kkk
+### Как запустить проект:
+
+Клонировать репозиторий и перейти в него в командной строке:
+
+```
+git clone 
+```
+
+```
+cd api_final_yatube/
+```
+
+Cоздать и активировать виртуальное окружение:
+
+```
+python3 -m venv env
+```
+
+```
+source venv/bin/activate
+```
+
+Установить зависимости из файла requirements.txt:
+
+```
+python3 -m pip install --upgrade pip
+```
+
+```
+pip install -r requirements.txt
+```
+
+Выполнить миграции:
+```
+cd yatube_api/
+```
+
+```
+python3 manage.py migrate
+```
+
+Запустить проект:
+
+```
+python3 manage.py runserver
+```
+
+Этот проект имитирует работу социальной сети без front-end части с использованием API cервисов.
+
+Возможные запросы к серверу:
+
+http://127.0.0.1:8000/posts/ - GET/POST
+Получить список всех постов всех пользователей/ Написать свой в JSON формате
+
+http://127.0.0.1:8000/posts/5 - GET
+Просмотреть детали выбранного поста
+
